@@ -20,7 +20,7 @@ input {
   outline: 0;
   border:0;
   width:250px;
-  background: $background-color;
+  /*background: $background-color;*/
   border-radius:5px;
 }
 
@@ -61,6 +61,10 @@ figcaption {
     margin: 10px 0;
     display: block;
   }
+}
+
+.hidden {
+  display: none;
 }
 
 /* Specific rules on each seations */
@@ -155,3 +159,28 @@ nav ul {
   display: block;
 }
 
+/* spacer */
+#spacer {
+  width: auto;
+  height: 70px;
+  background-color: $orange;
+  position: relative;
+  color: #fff;
+  font-size: 18px;
+
+  p {
+    margin-top: 22px;
+    width: auto;
+    position: absolute;
+    left: 50%;
+    margin-left: -450px;
+  }
+
+  .search {
+    margin-top: 15px;
+    width: auto;
+    position: absolute;
+    right: 50%;
+    margin-right: -450px;
+  }
+}
