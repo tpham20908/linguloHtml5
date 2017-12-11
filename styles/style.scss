@@ -68,7 +68,7 @@ figcaption {
 }
 
 /* Specific rules on each seations */
-/* header */
+/* header section */
 header {
   position: relative;
   width: auto;
@@ -114,7 +114,7 @@ nav ul {
   }
 }
 
-/* slider-images */
+/* slider-images section */
 .container {
   width: auto;
   position: relative;
@@ -130,7 +130,7 @@ nav ul {
   line-height: 25px;
   width: 350px;
   position: absolute;
-  top: 15%;
+  top: 5%;
   left: 15%;
   display: none;
   z-index: 11;
@@ -159,7 +159,7 @@ nav ul {
   display: block;
 }
 
-/* spacer */
+/* spacer section */
 #spacer {
   width: auto;
   height: 70px;
@@ -182,5 +182,35 @@ nav ul {
     position: absolute;
     right: 50%;
     margin-right: -450px;
+  }
+}
+
+/* boxcontent section */
+#boxcontent {
+  width: auto;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 70px 0 45px 0;
+
+  article {
+    width: 250px;
+    margin-right: 45px;
+    float: left;
+    font-size: 14px;
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      margin-left: 75px
+    }
+
+    p {
+      line-height: 25px;
+      margin-left: 75px;
+    }
+
+    img {
+      float: left;
+    }
   }
 }
