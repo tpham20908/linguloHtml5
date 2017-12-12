@@ -48,8 +48,12 @@ figcaption {
     margin: 10px 0;
     display: block; }
 
+.clear {
+  clear: both; }
+
 .hidden {
-  display: none; }
+  position: absolute;
+  clip: rect(1px 1px 1px 1px); }
 
 /* Specific rules on each seations */
 /* header section */
@@ -170,8 +174,7 @@ nav ul {
   width: auto;
   max-width: 900px;
   line-height: 25px;
-  margin: 0 auto;
-  clear: left; }
+  margin: 0 auto; }
 
 #four-columns h2, #text-columns h3 {
   font-size: 20px;
@@ -200,3 +203,24 @@ nav ul {
 
 .thumb-screen:hover {
   opacity: 0.5; }
+
+#text-columns {
+  width: auto;
+  max-width: 900px; }
+  #text-columns .column1, #text-columns .column2 {
+    margin: 70px 0;
+    font-size: 14px;
+    display: inline-block;
+    width: 450px;
+    float: left; }
+  #text-columns .column2 {
+    margin: 120px 0; }
+  #text-columns .row {
+    position: relative;
+    margin: 40px 0 0 50px;
+    float: right;
+    width: 350px; }
+    #text-columns .row img {
+      float: left; }
+    #text-columns .row p {
+      margin-left: 100px; }
