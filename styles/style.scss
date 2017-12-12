@@ -63,8 +63,13 @@ figcaption {
   }
 }
 
+.clear {
+  clear: both;
+}
+
 .hidden {
-  display: none;
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
 }
 
 /* Specific rules on each seations */
@@ -221,7 +226,6 @@ nav ul {
   max-width: 900px;
   line-height: 25px;
   margin: 0 auto;
-  clear: left;
 }
 
 #four-columns h2, #text-columns h3 {
@@ -256,4 +260,35 @@ nav ul {
 
 .thumb-screen:hover {
   opacity: 0.5;
+}
+
+#text-columns {
+  width: auto;
+  max-width: 900px;
+  .column1, .column2 {
+    margin: 70px 0;
+    font-size: 14px;
+    display: inline-block;
+    width: 450px;
+    float: left;
+  }
+
+  .column2 {
+    margin: 120px 0
+  }
+
+  .row {
+    position: relative;
+    margin: 40px 0 0 50px;
+    float: right;
+    width: 350px;
+
+    img {
+      float: left;
+    }
+
+    p {
+      margin-left: 100px;
+    }
+  }
 }
