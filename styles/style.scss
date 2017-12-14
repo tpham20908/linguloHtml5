@@ -124,6 +124,24 @@ nav ul {
   width: auto;
   position: relative;
   margin: 0 auto;
+
+  .button {
+    background: $orange;
+    color: $background-color;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 3px 3px 3px #777;
+    transition: all .4s ease;
+  }
+
+  .button:hover {
+    color: $color;
+    background: $background-color;
+    cursor: pointer;
+  }
+
   /*
   #slides {
     display: none;
@@ -135,7 +153,7 @@ nav ul {
   line-height: 25px;
   width: 350px;
   position: absolute;
-  top: 5%;
+  top: 15%;
   left: 15%;
   display: none;
   z-index: 11;
@@ -152,11 +170,15 @@ nav ul {
   }
 
   p {
-    margin: 0 0 30px 0;
+    margin: 0 0 20px 0;
     color: $p-color;
     background-color: $background-color;
     padding: 10px 15px;
     border-radius: 5px;
+
+    .responsive_button {
+      display: none;
+    }
   }
 }
 
@@ -403,5 +425,30 @@ footer {
         opacity: .99;
       }
     }
+  }
+}
+
+/* responsive */
+@media screen and (max-width:1215px) {
+  #slider_content1, #slider_content2, #slider_content3 {
+    width: auto;
+    margin-right: 50px;
+
+    h3 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 14px;
+
+      .responsive_button {
+        display: inline;
+        color: #000;
+      }
+    }
+  }
+
+  .container .button {
+    display: none;
   }
 }
