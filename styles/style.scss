@@ -250,7 +250,7 @@ nav ul {
   margin: 0 auto;
 }
 
-#four-columns h2, #text-columns h3 {
+#four-columns h2, #text-columns h2 {
   font-size: 20px;
   border-bottom: 1px solid #d6d0c1;
   padding: 20px 0;
@@ -318,7 +318,6 @@ nav ul {
 /* footer .wrapper section */
 footer {
   position: relative;
-  clear: both;
   width: auto;
   height: 350px;
   background: $color;
@@ -444,11 +443,75 @@ footer {
       .responsive_button {
         display: inline;
         color: #000;
+        transition: all .4s ease;
+      }
+
+      .responsive_button:hover {
+        color: $orange;
       }
     }
   }
 
   .container .button {
     display: none;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  #spacer {
+    font-size: 15px;
+
+    .search {
+      margin: 17px -385px 0 0;
+    }
+
+    p {
+      margin-left: -385px;
+    }
+
+    input {
+      padding: 4px;
+      font-size: 14px;
+    }
+
+    input[type=submit] {
+      padding: 1px 14px;
+    }
+  }
+
+  #boxcontent article {
+    float: none;
+    margin: 30px auto 0 auto;
+    width: 60%;
+  }
+
+  #four-columns {
+    width: 500px;
+    padding-left: 20px;
+    .img-item:nth-of-type(3), .img-item:nth-of-type(4) {
+      margin-top: 25px;
+    }
+  }
+
+  #text-columns {
+    max-width: 500px;
+
+    .column1, .column2 {
+      float: none;
+      margin: 50px auto;
+      .row {
+        float: none;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  footer .wrapper .column {
+    font-size: 12px;
+    width: 230px;
+  }
+
+  #copyright .wrapper .social  {
+    right: 50px;
   }
 }
