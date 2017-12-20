@@ -141,12 +141,6 @@ nav ul {
     background: $background-color;
     cursor: pointer;
   }
-
-  /*
-  #slides {
-    display: none;
-  }
-  */
 }
 
 #slider_content1, #slider_content2, #slider_content3 {
@@ -291,7 +285,8 @@ nav ul {
     margin: 70px 0;
     font-size: 14px;
     display: inline-block;
-    width: 450px;
+    width: auto;
+    max-width: 450px;
     float: left;
   }
 
@@ -498,7 +493,8 @@ footer {
 
     .column1, .column2 {
       float: none;
-      margin: 50px auto;
+      max-width: 500px;
+      margin: 50px 30px 0 30px;
       .row {
         float: none;
         margin-bottom: 40px;
@@ -513,5 +509,67 @@ footer {
 
   #copyright .wrapper .social  {
     right: 50px;
+  }
+}
+
+@media (max-width: 765px) {
+  .container {
+    position: absolute;
+    top: -1500px;
+  }
+
+  header {
+    height: 120px;
+    nav {
+      right: auto;
+      bottom: auto;
+      left: 50%;
+      margin-left: -184px;
+    }
+  }
+
+  #spacer {
+    height: 100px;
+
+    p {
+      text-align: center;
+      position: static;
+      margin: 0 auto;
+      padding: 15px 0 7px 0;
+    }
+
+    .search {
+      text-align: center;
+      position: static;
+      margin: 0 auto;
+    }
+  }
+
+  footer {
+    padding-bottom: 70px;
+    height: auto;
+
+    .wrapper {
+      width: 350px;
+      margin: 0 auto;
+
+      .column {
+        margin-top: 30px;
+        width: auto;
+        font-size: 14px;
+      }
+
+      .social {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #four-columns .img-item {
+    width: 200px;
+    float: none;
+    margin: 25px auto 0 auto;
   }
 }
