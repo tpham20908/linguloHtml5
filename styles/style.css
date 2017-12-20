@@ -62,6 +62,28 @@ header {
   width: auto;
   max-width: 900px;
   margin: 0 auto 20px auto; }
+  header .icon {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: block;
+    width: 40px;
+    height: 36px;
+    cursor: pointer;
+    z-index: 99;
+    display: none; }
+    header .icon .upperbar, header .icon .middlebar, header .icon .lowerbar {
+      display: block;
+      position: absolute;
+      width: 40px;
+      height: 8px;
+      background: #e56038; }
+    header .icon .upperbar {
+      top: 0; }
+    header .icon .middlebar {
+      top: 14px; }
+    header .icon .lowerbar {
+      top: 28px; }
   header h1 {
     margin: 35px 0 0 0;
     font-size: 55px;
@@ -107,12 +129,14 @@ nav ul {
     color: #333333;
     background: #ebe8de;
     cursor: pointer; }
+  .container #slides {
+    display: none; }
 
 #slider_content1, #slider_content2, #slider_content3 {
   line-height: 25px;
   width: 350px;
   position: absolute;
-  top: 15%;
+  top: 20%;
   left: 15%;
   display: none;
   z-index: 11; }
@@ -124,11 +148,13 @@ nav ul {
     background-color: #333333;
     padding: 10px 15px;
     border-radius: 15px 0 15px 0;
-    display: inline-block; }
+    display: inline-block;
+    opacity: 0.6; }
   #slider_content1 p, #slider_content2 p, #slider_content3 p {
     margin: 0 0 20px 0;
     color: #4a463b;
     background-color: #ebe8de;
+    opacity: 0.6;
     padding: 10px 15px;
     border-radius: 5px; }
     #slider_content1 p .responsive_button, #slider_content2 p .responsive_button, #slider_content3 p .responsive_button {
@@ -412,5 +438,3 @@ footer {
     width: 200px;
     float: none;
     margin: 25px auto 0 auto; } }
-
-/*# sourceMappingURL=style.css.map */
